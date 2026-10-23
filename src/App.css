@@ -1,0 +1,383 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+/* Homepage */
+
+.hero-box {
+    background-image: url("./assets/Rectangle\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-box {
+        height: max-content;
+    }
+
+    .hero-section2 {
+        display: none;
+    }
+
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.imgH {
+    position: relative;
+}
+
+.imgH2 {
+    margin-left: -5px;
+}
+
+.imgTH {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+@media screen and (max-width: 768px) {
+    .imgL3 {
+        display: none;
+    }
+
+    .imgH {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgH2 {
+        margin: 0;
+    }
+
+    .imgTH {
+        left: 12%;
+    }
+
+}
+
+.card-holder {
+  position: relative;
+  width: 100%;
+  background: white;
+  padding: 14px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+    position: absolute;
+    right: 14px;
+    bottom: 45px;
+    width: 75%;
+    height: 40%;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+
+    clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.card-body1 {
+    width:80%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.card-body1 h2 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-body1 p {
+
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.25;
+}
+
+.card-line {
+    position: absolute;
+    right: 14px;
+    bottom: 44px;
+    width: 73%;
+    height: 4px;
+    background: #3a65f2;
+    border-radius: 999px;
+}
+
+.item-holder {
+    position: relative;
+}
+
+.list-line {
+    position: absolute;
+    top: 66px;
+    left: 32px;
+    bottom: -40px;
+    width: 4px;
+    /* border-left: 2px dashed #2563eb; */
+    background-image: linear-gradient(to bottom, #2563eb 50%, transparent 40%);
+    background-size: 4px 5px; /* Width and repeat height interval */
+    background-repeat: repeat-y;
+    z-index: 1;
+}
+
+.icon-circle {
+    position: relative;
+    z-index: 2;
+    width: 66px;
+    height: 66px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.list-body h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.list-body p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .mainImg-holder {
+        display: none;
+    }
+}
+
+/* before-after-section */
+
+.before-after {
+    background: linear-gradient(to bottom, #3A65F2 65%, #fff 65%);
+    height: 70%;
+}
+
+.first-Row {
+    padding-top: 6%;
+}
+
+.img1 {
+    /* height: 90%; */
+    width: 99%;
+}
+
+.label-badge-1 {
+    position: absolute;
+    bottom: 45%;
+    left: 25px;
+    padding: 6px 18px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #2563eb;
+    z-index: 2;
+}
+
+.label-badge-2 {
+    position: absolute;
+    bottom: 45%;
+    right: 25px;
+    padding: 6px 18px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #2563eb;
+    z-index: 2;
+}
+
+.comparison-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    border: 10px solid white;
+    border-radius: 50%;
+    background-color: #3A65F2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    z-index: 2;
+}
+
+.arrow-button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 40px;
+    height: 46px;
+}
+
+/* Working process  */
+
+.image-wrapper {
+    position: relative;
+    border: 5px #D8775E solid;
+    border-radius: 20px;
+    padding: 15px 25px;
+}
+
+.process-number {
+    position: absolute;
+    background-color: #3A65F2;
+    color: white;
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    right: -35px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.process-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.process-card p {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .process-number {
+
+        top: 10px;
+        left: 15px;
+    }
+}
+
+/* Carousel */
+
+.caraform-holder {
+     background-image: url("./assets/Rectangle\ 1.png");
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+
+.cara-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .cara-row {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* form styling */
+
+.f1,.f2,.f3,.f4,.f5,.f6,.f7 {
+    outline: none !important;
+    background-color: transparent !important;
+    border: 1px solid #3A65F2 !important;
+    box-shadow: none !important;
+    padding: 10px;
+    
+    /* color: white !important; */
+    /* border-bottom: 1px solid white !important; */
+    border-radius: 10px !important;
+}
+
+.f1:focus, .f2:focus, .f3:focus, .f4:focus, .f5:focus, .f6:focus, .f7:focus {
+    background-color: transparent !important;
+    /* border-bottom: 1px solid white !important; */
+    box-shadow: none !important;
+    color: black !important;
+}
+
+@media screen and (max-width: 768px) {
+    .imgForm {
+        display: none;
+    }
+}
+
+/* testimonial */
+
+.test-holder {
+    position: relative;
+    padding: 25px 1px 44px 45px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+
+}
+
+.test-card-line {
+    position: absolute;
+    left: 1px;
+    bottom: 0px;
+    width:  4px;
+    height: 100%;
+    background: #3a65f2;
+    /* border-radius: 999px; */
+}
+
+.test-info h3 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.test-info p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.apostre-test {
+    position: absolute;
+    right: 20px;
+    bottom: 70%
+}
+
+@media screen and (max-width: 768px) {
+    .apostre-test {
+        right: 20px;
+        bottom: 78%
+    }
+}
