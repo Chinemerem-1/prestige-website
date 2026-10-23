@@ -8,6 +8,7 @@ import Homesection5 from "./Homesection5";
 import Homesection6 from "./Homesection6";
 import Homesection7 from "./Homesection7";
 import Homesection8 from "./Homesection8";
+import Homesection9 from "./Homesection9";
 
 function Homepage() {
     return (
@@ -22,6 +23,7 @@ function Homepage() {
          <Homesection6/>
          <Homesection7/>
          <Homesection8/>
+         <Homesection9/>
         </>
     )
 }
