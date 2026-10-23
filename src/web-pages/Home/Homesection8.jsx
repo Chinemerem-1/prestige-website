@@ -83,7 +83,7 @@ const Homesection8 = () => {
                 })}
             </Col>
 
-            <Col md={5} className="">
+            <Col md={5} className="mt-md-0 mt-5">
                 <div className="large-card d-block ms-md-auto">
                     
                     <h2 className="text-white mb-4" style={{fontSize: "60px", fontWeight: "700"}}>How Can We Help You!</h2>
