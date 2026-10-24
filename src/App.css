@@ -431,16 +431,34 @@
 .blog-number {
     position: absolute;
     background-color: #3A65F2;
-    color: white;
-    height: 52px;
-    width: 52px;
+    /* color: white; */
+    /* height: 52px; */
+    /* width: 52px; */
     /* border-radius: 10px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 30px;
-    right: -35px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    top: 50px;
+    left: 50px;
+    width: 61px;
+    height: 61px;
+    border-top-left-radius: 18px 18px;
+    border-top-right-radius: 18px 99px;
+    border-bottom-right-radius: 32px 40px;
+    border-bottom-left-radius: 100px 18px;
+
+    /* font-size: 24px; */
+    /* font-weight: 600; */
+     
+}
+
+.date-num {
     font-size: 24px;
+    font-weight: 600;
+}
+
+.date-month {
+    font-size: 16px;
     font-weight: 600;
 }
 

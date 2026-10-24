@@ -22,7 +22,7 @@ const Homesection9 = () => {
         {
             number: 1,
             date: 1,
-            month: "June",
+            month: "Jun",
             author: "Prestige",
             commentCount: "{10}",
             image: <Images src={imgw1} className="img-fluid w-100"/>,
@@ -35,7 +35,7 @@ const Homesection9 = () => {
         {
             number: 2,
             date: 1,
-            month: "June",
+            month: "Jun",
             author: "Prestige",
             commentCount: "{10}",
             image: <Images src={imgw2} className="img-fluid w-100"/>,
@@ -47,7 +47,7 @@ const Homesection9 = () => {
         {
             number: 3,
             date: 1,
-            month: "June",
+            month: "Jun",
             author: "Prestige",
             commentCount: "{10}",
             image: <Images src={imgw1} className="img-fluid w-100"/>,
@@ -71,7 +71,7 @@ const Homesection9 = () => {
                 </Col>
             </Row>
 
-            <Row className=" justify-content-between px-md-5 pt-md-5 g-md-5 process-holder">
+            <Row className=" justify-content-between px-md-5 pt-md-5  process-holder">
                 
                 {newsblogArray.map((items) => {
                     return (
@@ -80,9 +80,9 @@ const Homesection9 = () => {
 
                                 <div className="blog-wrapper flex-shrink-0">
                                     {items.image}
-                                    <div className="blog-number">
-                                        <span>{items.date}</span>
-                                        <span>{items.month}</span>
+                                    <div className="blog-number text-white ps-3 pt-1 pb-2 pe-3 text-center">
+                                        <span className="d-block date-num lh-1">{items.date}</span>
+                                        <span className="d-block date-month">{items.month}</span>
                                     </div>
                                 </div>
                                 <div className="pt-5 pb-3 px-5">
