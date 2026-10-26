@@ -1,6 +1,130 @@
+import { Container, Row, Col } from "react-bootstrap"
+import Images from "./Images"
+import fotImag from "../assets/WhatsApp_Image_2025-06-05_at_12.51.10_e39f890f-removebg-preview 1.png"
+import { FaFacebookF } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaGooglePlusG } from "react-icons/fa";
+import { PiStarFourFill } from "react-icons/pi";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 const Footer = () => {
     return (
         <>
+            <Container fluid className="px-md-5 pt-5 pb-2 fut">
+                <Row className="px-md-5 py-3 gap-4 justify-content-between align-items-center">
+                    <Col md={4}>
+                        <Images src={fotImag}/>
+                        <p className="mt-3" style={{fontSize: "14px", fontWeight: "400"}}>We take pride in delivering high-quality, reliable, and affordable cleaning solutions for homes and businesses. Whether you need a deep clean, regular maintenance, or move-in/move-out services, our  team is here to make your space shine.</p>
+
+                        <div className="d-flex gap-2" style={{}}>
+                            <div className="" style={{backgroundColor: '#3A65F2', padding: '5px', borderRadius: "5px"}}>
+                                <FaFacebookF style={{fontSize: "20px", color: "white"}}/>
+                            </div>
+                            
+                            <div className="" style={{backgroundColor: '#3A65F2', padding: '5px', borderRadius: "5px"}}>
+                                <FaLinkedinIn style={{fontSize: "20px", color: "white"}}/>
+                            </div>
+                            
+                            <div className="" style={{backgroundColor: '#3A65F2', padding: '5px', borderRadius: "5px"}}>
+                                <FaXTwitter style={{fontSize: "20px", color: "white"}}/>
+                            </div>
+                            
+                            <div className="" style={{backgroundColor: '#3A65F2', padding: '5px', borderRadius: "5px"}}>
+                                <FaWhatsapp style={{fontSize: "20px", color: "white"}}/>
+                            </div>
+                            
+                            <div className="" style={{backgroundColor: '#3A65F2', padding: '5px', borderRadius: "5px"}}>
+                                <FaGooglePlusG style={{fontSize: "20px", color: "white"}}/>
+                            </div>
+                            
+                        </div>                       
+                    </Col>
+
+                    <Col md={7}>
+                        <Row className="">
+                            <Col md={4}  xs={6} className="d-flex flex-column gap-2">
+                                <h6 className="mb-0" style={{fontSize: "16px", fontWeight: "600"}}>SERVICES</h6>
+                                <div className="d-flex serv-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Industrial Cleaning</p>
+                                </div>
+                                <div className="d-flex serv-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Deep Cleaning</p>
+                                </div>
+                                <div className="d-flex serv-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Residential Cleaning</p>
+                                </div>
+                                <div className="d-flex serv-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Janitorial Cleaning</p>
+                                </div>
+                                <div className="d-flex serv-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Supply Materials</p>
+                                </div>
+                                <div className="d-flex serv-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Post Construction</p>
+                                </div>
+                            </Col>
+
+                            <Col md={3}  xs={6} className="d-flex flex-column gap-2">
+                                <h6 className="mb-0" style={{fontSize: "16px", fontWeight: "600"}}>OUR LINKS</h6>
+                                <div className="d-flex links-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Home</p>
+                                </div>
+                                <div className="d-flex links-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">About</p>
+                                </div>
+                                <div className="d-flex links-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Privacy/Policy</p>
+                                </div>
+                                <div className="d-flex links-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Portfolio</p>
+                                </div>
+                                <div className="d-flex links-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">FAQ</p>
+                                </div>
+                                <div className="d-flex links-holder align-items-center gap-1">
+                                    <PiStarFourFill size={13} style={{color: "#3A65F2"}}/>
+                                    <p className="mb-0">Book Online</p>
+                                </div>
+                            </Col>
+
+                            <Col md={5} xs={12} className="d-flex flex-column gap-2  mt-md-0 mt-3">
+                                <h6 className="mb-0" style={{fontSize: "16px", fontWeight: "600"}}>GET IN TOUCH</h6>
+                                <div className="d-flex git-holder align-items-center gap-2 justify-content-start">
+                                    <FaLocationDot size={20} style={{color: "#3A65F2", flexShrink: "0"}}/>
+                                    <p className="mb-0">3rd Floor, 186A Igbosere Road Lagos,Nigeria. </p>
+                                </div>
+                                <div className="d-flex git-holder align-items-center gap-2 justify-content-start">
+                                    <FaPhoneAlt size={20} style={{color: "#3A65F2", flexShrink: "0"}}/>
+                                    <p className="mb-0">234-80-32792064</p>
+                                </div>
+                                <div className="d-flex git-holder align-items-center gap-2 justify-content-start">
+                                    <MdEmail size={21} style={{color: "#3A65F2", flexShrink: "0"}}/>
+                                    <p className="mb-0">prestige@prestige-hygiene.com</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+
+                <hr className="mx-md-5 fut-line"/>
+
+                <p className="px-md-5 text-center" style={{fontFamily: "League Spartan",fontSize: "12px", fontWeight: "400" }}>© 2025 Prestige-hygiene. All rights reserved.</p>
+            </Container>
         </>
     )
 }
