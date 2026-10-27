@@ -1,0 +1,33 @@
+/* details-section-component  */
+
+.slideshow-img-holder {
+    position: absolute;
+    bottom: -60px;
+    left: px;
+    /* width: 62%; */
+    z-index: 2;
+}
+
+.slide-transition {
+    transition: opacity 0.4s ease-in-out;
+}
+
+.play-button {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+@media screen and (max-width: 768px) {
+    .main-img {
+        display: none;
+    }
+
+    .slideshow-img-holder {
+        position: static;
+        bottom: 0;
+        left: 49px;
+        /* width: 62%; */
+        z-index: 2;
+    }
+}

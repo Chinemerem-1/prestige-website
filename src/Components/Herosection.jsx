@@ -18,13 +18,6 @@ const Herosection = ({img, headerText}) => {
         fontWeight: 700
     }
 
-    const heroT2 = {
-        fontFamily: "Montserrat",
-        color: "black",
-        fontSize: 16,
-        fontWeight: 500
-    }
-
     const heroTextSyle = {
         fontSize: 30,
         fontWeight: 600
@@ -36,7 +29,7 @@ const Herosection = ({img, headerText}) => {
             <Row className="g-0 align-items-center row-holder">
                 <Col md={4} className="hero-section1 ps-md-5">
                     <WiStars size={80} className="star-header"/>
-                    <h3 className="mb-0 ps-md-5 text-md-start text-center" style={heroTextSyle}>{headerText}</h3>
+                    <h3 className="mb-0 ps-md-5 text-md-start text-center text-nowrap" style={heroTextSyle}>{headerText}</h3>
                 </Col>
 
                 <Col md={8} className="hero-comp2">

@@ -79,7 +79,7 @@ const Homesection1 = () => {
     <>
       <Container fluid className=" py-5 px-md-5">
         <Row className="py-md-5 g-0">
-          <Col md={6} className="d-flex imgH align-items-end ps-md-5">
+          <Col md={6} className="d-flex imgH align-items-end ps-md-5 bg-info">
               <Images src={imgL3} className="imgL3 img-fluid z-1"/>
 
               <div className="imgTH text-center">
@@ -87,7 +87,7 @@ const Homesection1 = () => {
                 <p className="mb-0" style={THp2}>Years Of Experience</p>
               </div>
 
-              <div className="d-flex imgH2 flex-column gap-1 z-2">
+              <div className="d-flex imgH2 flex-column gap-1 z-2 bg-danger">
                 <Images src={imgL1} className="img-fluid imgL1"/>
                 <Images src={imgL2} className="d-block ms-auto img-fluid imgL2"/>
               </div>
