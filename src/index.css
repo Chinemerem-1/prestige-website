@@ -1,3 +1,43 @@
+/* herobox commponent */
+
+.hero-comp {
+    background-image: url("./assets/Rectangle\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-section1 {
+    position: relative;
+}
+
+.star-header {
+    position: absolute;
+    top: -40px;
+    left: 45px;
+    color: #3A65F2;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-comp {
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .star-header {
+        position: absolute;
+        top: -30px;
+        left: -55px;
+        color: #3A65F2;
+    }
+
+    .hero-comp2 {
+        display: none;
+    }
+
+}
+
 /* details-section-component  */
 
 .slideshow-img-holder {
@@ -27,7 +67,116 @@
         position: static;
         bottom: 0;
         left: 49px;
-        /* width: 62%; */
         z-index: 2;
     }
+}
+
+/* Benefits-component  */
+
+.metric-info p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.metric-info span {
+    font-size: 16px;
+    font-weight: 600;
+}
+/* 
+.bg-purple-bar {
+    background-color: black !important;
+} */
+
+.ben-card {
+    position: relative;
+    border: 1px solid #D9D9D9;
+}
+
+.ben-pic {
+    position: absolute;
+    top: 0;
+    right: -1px;
+}
+
+.ben-card-info h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ben-card-info p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* FAQ-Component  */
+
+/* accordion */
+
+.faqcomp-question {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.faqcomp-body {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.faq-Img-holder {
+    position: relative;
+}
+
+.faq-Img {
+    position: relative;
+    z-index: 2;
+}
+
+.star-faq1 {
+    position: absolute;
+    z-index: 1;
+    top: 17px;
+    left: 17px;
+    color: #3A65F2;
+}
+
+.star-faq2 {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 30px;
+    color: #3A65F2;
+}
+
+.star-faq3 {
+    position: absolute;
+    z-index: 1;
+    bottom: 120px;
+    left:85px;
+    color: #3A65F2;
+}
+
+.star-faq4 {
+    position: absolute;
+    z-index: 1;
+    bottom: -9px;
+    left:310px;
+    color: #3A65F2;
+}
+
+.star-faq5 {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 60px;
+    color: #3A65F2;
+}
+
+@media screen and (max-width: 768px) {
+    .faq-Img-holder {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
 }
