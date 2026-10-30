@@ -7,8 +7,6 @@ import imgL1 from "../../assets/section1 first.png"
 import imgL2 from "../../assets/section1 third.png"
 import imgL3 from "../../assets/section1 second.png"
 import { IoCheckbox } from "react-icons/io5";
-import Button from "react-bootstrap/esm/Button"
-import { Link } from "react-router-dom"
 
 const Aboutsection1 = () => {
     const headerStyle = {
@@ -100,6 +98,9 @@ const Aboutsection1 = () => {
             <h2 className="mb-3" style={headerStyle2}>Passionate About Cleaning Since Day One....</h2>
             <p className="mb-3" style={bodyStyle}>At [Prestige Hygiene], we believe a clean space is a happy space. 
 With a team of trained, trustworthy professionals, we provide reliable and detailed cleaning services for homes and businesses. Whether it’s a one-time deep clean or regular upkeep, we’re committed to making your environment spotless, fresh, and stress-free.</p>
+<p>
+Whether you need a one-time deep clean or regular upkeep, our trained professionals will clean every corner with care and attention to detail. We use safe, eco-friendly products and modern tools to ensure your space is sparkling, fresh, and truly clean.
+</p>
 
 
             <section className="d-flex flex-column gap-3">
@@ -120,7 +121,6 @@ With a team of trained, trustworthy professionals, we provide reliable and detai
                 <p className="mb-0" style={checkT4}>We are bonded and insured</p>
               </div>
             </section>
-            <Button as={Link} to="/About" className='mt-4' style={{backgroundColor: "#3A65F2", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>Discover more</Button>
           </Col>
         </Row>
       </Container>

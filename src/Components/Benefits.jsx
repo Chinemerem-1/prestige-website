@@ -75,12 +75,15 @@ const Benefits = ({bencontHolder, headText, headLabelText, label1, label2, label
         }
 
   return (
-    <Container fluid className="px-md-5" style={bencontHolder}>
-        <div className="d-flex px-md-5 align-items-center gap-2 mb-3">
-            <Images src={imgC}/>
-            <p className="mb-0" style={headStyle}>{headText}</p>
+    <Container fluid className={bencontHolder}>
+        <div className="px-md-5">
+            <div className="d-flex align-items-center gap-2 mb-3">
+                <Images src={imgC}/>
+                <p className="mb-0" style={headStyle}>{headText}</p>
+            </div>
+            <h3 style={headLabel}>{headLabelText}</h3>
         </div>
-        <h3 style={headLabel}>{headLabelText}</h3>
+        
 
         <Row className=" px-md-5 justify-content-between align-items-center">
             <Col md={4}>

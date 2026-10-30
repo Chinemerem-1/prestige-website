@@ -5,8 +5,7 @@ import imgC from "../../assets/stars.png"
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
-import Button from "react-bootstrap/esm/Button"
-import { Link } from "react-router-dom"
+import ButtonComp from "../../Components/ButtonComp"
 
 const Homesection8 = () => {
      const accordionStyle = {
@@ -90,7 +89,7 @@ const Homesection8 = () => {
 
                     <p className="text-white mb-4" style={{fontSize: "18px", fontWeight: "400"}}>We understand the importance approaching each work integrally and believe in the power of simple and easy communication.</p>
 
-                    <Button as={Link} to="/Login" className='' style={{backgroundColor: "#A44730", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>Contact Us</Button>
+                    <ButtonComp address="/Login" buttonClass="butBrownClass" buttonText="Contact Us"/>
                 </div>
             </Col>
         </Row>

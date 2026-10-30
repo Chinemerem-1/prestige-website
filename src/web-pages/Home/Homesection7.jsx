@@ -5,8 +5,7 @@ import test1 from "../../assets/testimonial1.png"
 import test2 from "../../assets/testimonial2.png"
 import test3 from "../../assets/testimonial3.png"
 import testpunc from "../../assets/test-apostre.svg"
-import Button from "react-bootstrap/esm/Button"
-import { Link } from "react-router-dom"
+import ButtonComp from "../../Components/ButtonComp"
 
 const Homesection7 = () => {
 
@@ -30,14 +29,14 @@ const Homesection7 = () => {
         <Row className="g-0 px-md-5 justify-content-between">
           <Col md={4} className="">
             <div className="mb-3 mt-md-4">
-                <div className="d-flex align-items-center gap-0 mb-2">
+                <div className="d-flex align-items-center gap-2 mb-2">
                     <Images src={imgC}/>
                     <p className="mb-0 text-white" style={headStyle}>TESTIMONIALS</p>
                 </div>
                     <h3 style={headLabel} className="text-white">What Our Clients Say About Us</h3>
             </div>
             <p className="mb-4 text-white">Our team is trained and experienced, and we use high-quality cleaning products and equipment to ensure excellent results. We also conduct regular quanlity checks and welcome customer feedback.</p>
-            <Button as={Link} to="/Login" className='' style={{backgroundColor: "#3A65F2", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>View more</Button>
+            <ButtonComp address="/Login" buttonClass="butBlueClass" buttonText="View more"/>
           </Col>
 
           <Col md={7} className=" d-flex flex-column gap-3 mt-md-0 mt-4">

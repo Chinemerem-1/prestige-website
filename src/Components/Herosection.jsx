@@ -2,8 +2,7 @@ import Container from "react-bootstrap/esm/Container"
 import Row from "react-bootstrap/esm/Row"
 import Col from "react-bootstrap/esm/Col"
 import Images from "../Components/Images"
-import img from "../assets/hero pics-about.svg"
-import { WiStars } from "react-icons/wi";
+import Dynamicstar from "./Dynamicstar";
 
 const Herosection = ({img, headerText}) => {
 
@@ -28,7 +27,7 @@ const Herosection = ({img, headerText}) => {
         <Container fluid className="hero-comp ps-md-5 pe-md-0">
             <Row className="g-0 align-items-center row-holder">
                 <Col md={4} className="hero-section1 ps-md-5">
-                    <WiStars size={80} className="star-header"/>
+                    <Dynamicstar starHeader="star-header" size={80}/>
                     <h3 className="mb-0 ps-md-5 text-md-start text-center text-nowrap" style={heroTextSyle}>{headerText}</h3>
                 </Col>
 

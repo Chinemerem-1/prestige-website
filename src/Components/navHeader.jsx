@@ -2,10 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/esm/Button';
+import ButtonComp from "../Components/ButtonComp"
 import Images from './Images';
 import imag from "../assets/WhatsApp_Image_2025-06-05_at_12.51.10_e39f890f-removebg-preview 1.png"
+import { useState } from 'react';
 
 function NavHeader() {
 
@@ -15,6 +15,8 @@ function NavHeader() {
     fontSize: 16,
     fontWeight: 500
   }
+
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <Navbar expand="lg" className="px-md-5 py-md-3">
@@ -27,10 +29,14 @@ function NavHeader() {
         <Navbar.Collapse id="basic-navbar-nav">
 
           <Nav className="ms-auto w-100 justify-content-end gap-md-5 d-flex  navBar">
-            <Nav.Link style={navC} href="/">Home</Nav.Link>
-            <Nav.Link style={navC} href="/About">About</Nav.Link>
+            <Nav.Link style={navC} className='nav-link' href="/">Home</Nav.Link>
+            <Nav.Link style={navC} className='nav-link' href="/About">About</Nav.Link>
 
-            <NavDropdown style={navC} title="Service" id="basic-nav-dropdown">
+            <NavDropdown style={navC} className='custom-service-dropdown'
+            show={isOpen}           
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)} 
+            onToggle={(val) => setIsOpen(val)}  title="Service" id="basic-nav-dropdown">
               <NavDropdown.Item style={navC} href="/sec1">Residential Cleaning</NavDropdown.Item>
               <NavDropdown.Item style={navC} href="/sec2">Janitorial Cleaning</NavDropdown.Item>
               <NavDropdown.Item style={navC} href="/sec3">Supply Of Materials</NavDropdown.Item>
@@ -39,10 +45,10 @@ function NavHeader() {
               <NavDropdown.Item style={navC} href="/sec6">Industrial Cleaning</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link style={navC} href="/Blog">Blog</Nav.Link>
-            <Nav.Link style={navC} href="/Project">Project</Nav.Link>
-            <Nav.Link style={navC} href="/Contact">Contact</Nav.Link>
-            <Button as={Link} to="/Login" className='ms-md-5' style={{backgroundColor: "#A44730", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>Login</Button>
+            <Nav.Link style={navC} className='nav-link' href="/Blog">Blog</Nav.Link>
+            <Nav.Link style={navC} className='nav-link' href="/Project">Project</Nav.Link>
+            <Nav.Link style={navC} className='nav-link' href="/Contact">Contact</Nav.Link>
+            <ButtonComp address="/Login" buttonClass="butBrownClass" buttonText="Login"/>
           </Nav>
         </Navbar.Collapse>
       </Container>

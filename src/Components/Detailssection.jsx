@@ -2,11 +2,10 @@ import Container from "react-bootstrap/esm/Container"
 import Row from "react-bootstrap/esm/Row"
 import Col from "react-bootstrap/esm/Col"
 import Images from "../Components/Images"
+import ButtonComp from "../Components/ButtonComp"
 import img2 from "../assets/play.svg"
 import imgC from "../assets/stars.png"
 import { IoCheckbox } from "react-icons/io5";
-import Button from "react-bootstrap/esm/Button"
-import { Link } from "react-router-dom"
 import { useEffect, useState } from "react"
 
 const Detailssection = ({imgL1, slide1, slide2, slide3, compHeader, paragraphOne, paragraphTwo, listOne, listTwo, listThree, listFour, buttonText}) => {
@@ -130,7 +129,7 @@ const Detailssection = ({imgL1, slide1, slide2, slide3, compHeader, paragraphOne
                         </div>
                     </section>
 
-                    <Button as={Link} to="/About" className='mt-4' style={{backgroundColor: "#3A65F2", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>{buttonText}</Button>
+                    <ButtonComp address="/About" buttonClass="butBlueClass mt-4" buttonText={buttonText}/>
                 </Col>
             </Row>
         </Container>

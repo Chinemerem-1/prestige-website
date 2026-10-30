@@ -14,6 +14,16 @@
     position: relative;
 }
 
+.hero-section1 {
+    position: relative;
+}
+
+.home-star {
+    position: absolute;
+    left: 0;
+    top: 75px;
+}
+
 @media screen and (max-width: 768px) {
     .hero-box {
         height: max-content;
@@ -587,7 +597,7 @@
 }
 
 .member-wrapper {
-    position: relative;
+    /* position: relative; */
     border: 5px #3A65F2 solid;
     background-color: #fff;
     border-radius: 20px;
@@ -612,3 +622,77 @@
 @media screen and (max-width: 768px) {
 
 }
+
+/* Residential page  */
+
+.res-bg-holder {
+    background-image: url("./assets/Rectangle\ 1.png");    
+}
+
+.bg-purple-bar {
+    background-color: #A44730 !important;
+}
+
+.bg-faq {
+    background-color: #A44730;
+}
+
+/* Janitorial page  */
+
+.jan-bg-holder {
+    background-color: #A44730;    
+}
+
+.bg-green-bar {
+    background-color: white!important;
+}
+
+.bg-jan-faq {
+    background-image: url("./assets/Rectangle\ 1.png");
+}
+
+/* Material page  */
+
+.mat-bg-holder {
+    background-color: #A44730;    
+}
+
+.bg-blue-bar {
+    background-color: white!important;
+}
+
+/* Construction page */
+
+.bg-post-faq {
+    background-color: #A44730;
+}
+
+/* Fumigation page */
+
+.fum-bg-holder {
+    background-image: url("./assets/Rectangle\ 1.png");    
+}
+
+.bg-fum-faq {
+    background-color: #A44730;
+}
+
+.bg-yellow-bar {
+    background-color: #A44730 !important;
+}
+
+/* Industrial page */
+
+.ind-bg-holder {
+    background-image: url("./assets/Rectangle\ 1.png");    
+}
+
+.bg-ind-faq {
+    background-color: #A44730;
+}
+
+.bg-red-bar {
+    background-color: #A44730 !important;
+}
+
+

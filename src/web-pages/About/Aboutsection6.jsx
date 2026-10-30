@@ -59,7 +59,7 @@ const Aboutsection6 = () => {
                 </Col>
             </Row>
 
-            <Row className=" justify-content-between px-md-5 pt-5 gx-5 gy-md-0 gy-3 process-holder">
+            <Row className="justify-content-between px-md-5 pt-5 gx-5 gy-md-0 gy-3 process-holder">
                 
                 {processArray.map((member) => {
                     return (
@@ -69,7 +69,7 @@ const Aboutsection6 = () => {
                                     {member.image}
                                 </div>
 
-                                <div className="member-card w-50 px-3 bg-white py-3 bg-danger">
+                                <div className="member-card w-50 px-3 bg-white py-3">
                                     <h6 className="mt-4">{member.title}</h6>
                                     <p>{member.description}</p>
                                 </div>

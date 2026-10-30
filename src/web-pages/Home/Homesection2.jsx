@@ -4,9 +4,8 @@ import img1 from "../../assets/section2 first.png"
 import img2 from "../../assets/section2 second.png"
 import img3 from "../../assets/section2 third.png"
 import Images from "../../Components/Images"
+import ButtonComp from "../../Components/ButtonComp"
 import logo21 from "../../assets/Vector.png"
-import Button from "react-bootstrap/esm/Button"
-import { Link } from "react-router-dom"
 
 
 const Homesection2 = () => {
@@ -62,7 +61,7 @@ const Homesection2 = () => {
             </Row>
             
             <div className="text-center mt-5">
-                <Button as={Link} to="/sec1" className='' style={{backgroundColor: "#3A65F2", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>Browse All Service</Button>
+                <ButtonComp address="/sec1" buttonClass="butBlueClass mt-1" buttonText="Browse All Service"/>
             </div>   
         </Container>
     </>

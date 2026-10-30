@@ -14,37 +14,37 @@ const ProductGrid = () => {
     const productGridArray = [
         {
             id: 1,
-            pics: <Images src={pro1}/>,
+            pics: <Images src={pro1} className="img-fluid"/>,
             title: "Pressure Cleaning Machine",
             butt: <ButtonComp/>
         },
         {
-            id: 1,
-            pics: <Images src={pro2}/>,
+            id: 2,
+            pics: <Images src={pro2} className="img-fluid"/>,
             title: "Disinfectant",
             butt: <ButtonComp/>
         },
         {
-            id: 1,
-            pics: <Images src={pro3}/>,
+            id: 3,
+            pics: <Images src={pro3} className="img-fluid"/>,
             title: "Long Brooms",
             butt: <ButtonComp/>
         },
         {
-            id: 1,
-            pics: <Images src={pro4}/>,
+            id: 4,
+            pics: <Images src={pro4} className="img-fluid"/>,
             title: "Dust Pans",
             butt: <ButtonComp/>
         },
         {
-            id: 1,
-            pics: <Images src={pro5}/>,
+            id: 5,
+            pics: <Images src={pro5} className="img-fluid"/>,
             title: "Handheld Pickers",
             butt: <ButtonComp/>
         },
         {
-            id: 1,
-            pics: <Images src={pro6}/>,
+            id: 6,
+            pics: <Images src={pro6} className="img-fluid"/>,
             title: "Speed Blowers",
             butt: <ButtonComp/>
         },
@@ -71,17 +71,20 @@ const ProductGrid = () => {
         </div>
        
 
-        <Row className="px-md-5 gy-3 gx-3">
+        <Row className= "px-md-5 gx-md-0 gy-4 py-4">
             {productGridArray.map((products) => {
                 return (
-                    <Col md={4} className="bg-info h-100">
-                        <div className="" key={products.id}>
-                            {products.pics}
-                            <div>
+                    <Col md={4} className="product-card d-flex justify-content-center">
+                        
+                            <div className="product-img">
+                                {products.pics}
+                            </div>
+
+                            <div className="product-info">
                                 <h6>{products.title}</h6>
                                 <span>{products.butt}</span>
                             </div>
-                        </div>
+                       
                     </Col>
                 )
             })}

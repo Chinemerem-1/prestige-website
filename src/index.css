@@ -1,3 +1,42 @@
+/* navHeader component */
+
+.nav-link:hover {
+    color: #3A65F2 !important;
+}
+
+.custom-service-dropdown .dropdown-menu {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+  min-width: 280px;          /* Makes the card wide like Figma */
+  margin-top: 5px !important; /* Adds breathing room below the navbar */
+  left: 50% !important;
+  transform: translateX(-50%) !important; /* Centers it nicely under "Service" */
+}
+
+/* 2. Styling the Main Title ("Service") */
+.custom-service-dropdown .dropdown-toggle {
+  color: black !important; /* Change to your desired title color */
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* 3. Styling all the Dropdown Items underneath */
+.custom-service-dropdown .dropdown-item {
+  font-size: 0.95rem;
+  padding: 12px 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 4. Item Hover Effect */
+.custom-service-dropdown .dropdown-item:hover {
+  background-color: #A44730; /* Background color when hovering an item */
+  color: #ffffff !important;
+}
+
 /* herobox commponent */
 
 .hero-comp {
@@ -177,6 +216,56 @@
     }
 }
 
+/* Productgrid component */
+
+.product-card {
+    position: relative;
+}
+
+.product-info {
+    position: absolute;
+    top: 50%;
+}
+
 @media screen and (max-width: 768px) {
 
+}
+
+/* button-colors  */
+.butBrownClass {
+    background-color: #A44730 !important;
+    border: 1px solid #A44730 !important;
+}
+
+.butBrownClass:hover {
+    background-color: white !important;
+    border: 1px solid #A44730 !important;
+    color: black !important;
+}
+
+.butBlueClass {
+    background-color: #3A65F2 !important;
+    border: 1px solid #3A65F2 !important;
+}
+
+.butBlueClass:hover {
+    background-color: white !important;
+    border: 1px solid #3A65F2 !important;
+    color: black !important;
+}
+
+.play-circle {
+    position: relative;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    background-color: #3A65F2;
+    border-radius: 50%;
+    /* box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25); */
+}
+
+.play-circle:hover {
+    border: 1px solid #b95c44;
+    background-color: white;
+    color: #3A65F2 !important;
 }

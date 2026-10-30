@@ -8,8 +8,7 @@ import logo5 from "../../assets/caramel5.png"
 import Images from "../../Components/Images"
 import imgC from "../../assets/stars.png"
 import formImg from "../../assets/form-picture.png"
-import Button from "react-bootstrap/esm/Button"
-import { Link } from "react-router-dom"
+import ButtonComp from "../../Components/ButtonComp"
 
 const Homesection6 = () => {
 
@@ -72,7 +71,7 @@ const Homesection6 = () => {
         <section className="caraform-holder py-5">
             <Container fluid className="px-md-5 pb-5">
 
-                <div className="d-flex align-items-center gap-0 mb-1 px-md-5">
+                <div className="d-flex align-items-center gap-2 mb-1 px-md-5">
                     <Images src={imgC}/>
                     <p className="mb-0" style={caramelStyle}>OUR CLIENTS/PARTNERS</p>
                 </div>
@@ -98,7 +97,7 @@ const Homesection6 = () => {
                     </Col>
                     <Col md={6} className="px-md-5 py-md-5">
                         <div className="mb-3 mt-md-5">
-                            <div className="d-flex align-items-center gap-0 mb-2">
+                            <div className="d-flex align-items-center gap-2 mb-2">
                                 <Images src={imgC}/>
                             <p className="mb-0" style={headStyle}>REQUEST A QUOTE</p>
                             </div>
@@ -159,7 +158,7 @@ const Homesection6 = () => {
                             </Form.Group>
                         </Form>
 
-                        <Button as={Link} to="/Login" className='mt-3' style={{backgroundColor: "#3A65F2", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>Submit</Button>
+                        <ButtonComp address="/Login" buttonClass="butBlueClass mt-4" buttonText="Submit"/>
                     </Col>
                 </Row>    
             </Container>

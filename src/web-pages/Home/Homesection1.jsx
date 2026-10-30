@@ -1,14 +1,13 @@
 import Container from "react-bootstrap/esm/Container"
 import Row from "react-bootstrap/esm/Row"
 import Col from "react-bootstrap/esm/Col"
+import ButtonComp from "../../Components/ButtonComp"
 import Images from "../../Components/Images"
 import imgC from "../../assets/stars.png"
 import imgL1 from "../../assets/section1 first.png"
 import imgL2 from "../../assets/section1 third.png"
 import imgL3 from "../../assets/section1 second.png"
 import { IoCheckbox } from "react-icons/io5";
-import Button from "react-bootstrap/esm/Button"
-import { Link } from "react-router-dom"
 
  const Homesection1 = () => {
 
@@ -120,8 +119,8 @@ With a team of trained, trustworthy professionals, we provide reliable and detai
                 <IoCheckbox style={{color: "#3A65F2", fontSize: "25px"}}/>
                 <p className="mb-0" style={checkT4}>We are bonded and insured</p>
               </div>
-            </section>
-            <Button as={Link} to="/About" className='mt-4' style={{backgroundColor: "#3A65F2", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>Discover more</Button>
+            </section>  
+            <ButtonComp address="/About" buttonClass="butBlueClass mt-4" buttonText="Discover more"/>
           </Col>
         </Row>
       </Container>

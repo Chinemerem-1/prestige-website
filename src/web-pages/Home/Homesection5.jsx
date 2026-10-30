@@ -1,11 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap"
 import Images from "../../Components/Images"
+import ButtonComp from "../../Components/ButtonComp"
 import imgC from "../../assets/stars.png"
 import imgw1 from "../../assets/working1.png"
 import imgw2 from "../../assets/working2.png"
 import imgw3 from "../../assets/working3.png"
-import Button from "react-bootstrap/esm/Button"
-import { Link } from "react-router-dom"
 
 const Homesection5 = () => {
 
@@ -59,7 +58,7 @@ const Homesection5 = () => {
 
             <Row className="px-md-5 g-0">
                 <Col md={6} className="">
-                    <div className="d-flex align-items-center gap-0 mb-1">
+                    <div className="d-flex align-items-center gap-2 mb-1">
                         <Images src={imgC}/>
                         <p className="mb-0" style={processStyle}>HOW WE WORK</p>
                     </div>
@@ -93,7 +92,7 @@ const Homesection5 = () => {
             </Row>
 
             <div className="text-center mt-5">
-                <Button as={Link} to="/Contact" className='' style={{backgroundColor: "#A44730", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>Book Our Cleaning</Button>
+                <ButtonComp address="/Contact" buttonClass="butBrownClass" buttonText="Book Our Cleaning"/>
             </div>
 
         </Container>

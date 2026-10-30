@@ -1,11 +1,11 @@
 import Container from "react-bootstrap/esm/Container"
 import Row from "react-bootstrap/esm/Row"
 import Col from "react-bootstrap/esm/Col"
-import Button from "react-bootstrap/esm/Button"
 import Images from "../../Components/Images"
 import img from "../../assets/hero pics.svg"
-import img2 from "../../assets/play.svg"
-import { Link } from "react-router-dom"
+import ButtonComp from "../../Components/ButtonComp"
+import PlayComponent from "../../Components/PlayComponent"
+import Dynamicstar from "../../Components/Dynamicstar"
 
 const Herobox = () => {
 
@@ -32,6 +32,7 @@ const Herobox = () => {
         <Container fluid className="hero-box ps-md-5 pe-md-0">
             <Row className=" g-0">
                 <Col md={6} className="hero-section1 px-md-5 pt-md-5">
+                    <Dynamicstar starHeader="home-star" size={80}/>
                     <p className="title mb-3 pt-md-4 mt-md-5">WE ARE PRESTIGE</p>
 
                     <h1 className="mb-3" style={heroT}>Professional Cleaning Service You Can Trust</h1>
@@ -40,10 +41,10 @@ const Herobox = () => {
                     
                     <div className="hero-cta d-flex gap-md-5">
                         <div className="">
-                            <Button as={Link} to="/Login" className='' style={{backgroundColor: "#A44730", border: "none", padding: "10px 40px", borderRadius: "10px", fontFamily: "Montserrat", color: "white", fontSize: 16, fontWeight: 500}}>Book Online</Button>
+                            <ButtonComp address="/Login" buttonClass="butBrownClass" buttonText="Book Online"/>
                         </div>
                         <div className="d-flex align-items-center gap-2">
-                            <Images src={img2} className=""/>
+                            <PlayComponent/>
                             <p className="mb-0" style={heroT2}>Watch Our Story</p>
                         </div>
                     </div>
